@@ -51,7 +51,8 @@ class ConvTransposeOpCodeGenerator(OpCodeGenerator):
         padding[i] = total_padding[i] // 2
     params_str = self.gen_params_str(groups=attr_value_dict["group"],
                                      dilation=dilation,
-                                     out_channels=weights.shape[1],
+                                     # out_channels=weights.shape[1],
+                                     out_channels=attr_value_dict["group"],
                                      padding=padding,
                                      output_padding=output_padding,
                                      kernel_size=weights.shape[2:],
