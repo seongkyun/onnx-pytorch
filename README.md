@@ -5,6 +5,8 @@
 
 
 Generates PyTorch code from ONNX.
+This is forked from https://github.com/fumihwh/onnx-pytorch
+
 
 ## Installation
 
@@ -15,7 +17,7 @@ pip install onnx-pytorch
 
 - From source
 ```bash
-git clone https://github.com/fumihwh/onnx-pytorch.git
+git clone https://github.com/seongkyun/onnx-pytorch.git
 cd onnx-pytorch
 pip install -r requirements.txt
 pip install -e .

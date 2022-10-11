@@ -32,8 +32,7 @@ class UpsampleOpCodeGenerator(OpCodeGenerator):
         scale_factor=scales,
         mode=f"'{mode}'",
         align_corners=align_corners,
-        # recompute_scale_factor=scales is not None,
-        recompute_scale_factor=False,
+        recompute_scale_factor=scales is not None,
     )
     init_str, forward_str = [], []
 
